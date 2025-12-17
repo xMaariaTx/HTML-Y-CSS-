@@ -291,3 +291,84 @@ h2, h3{
 }
 ```
 
+## Selector de clase (.)
+- Si queremos aplicar un estilo a uno o vario parrafos concretos, marcaremos el parafo que nos interesa informando su atributo class
+```HTML
+<body>
+	<p class="titular"> Articulo Sobre CSS</p>
+	<p class="destacado-titular"> El CSS no es un lenguaje de programacion. Se utiliza para...</p>
+	<p> Clase que solo afecta <em class="destacado9"> solo que hay aqui dentro </em> fuera no </p>
+</body>
+```
+```CSS
+.titular { color: green; }
+.destacado {text-decoration: underline;}
+em.destacado {color: blue;}
+```
+
+## Selector de identificador (#)
+Usaremos un identificador id para definir un estilo concreo para un momento determinado, este identificador debe ser unico y no lo volveremos a usarlo en el resto del fichero HTML
+```HTML
+<body>
+	<p id="titular"> Articulo sobre CSS </p>
+	<p id="destacado"> El CSS no es un lenguaje de programacion. Se utiliza para... </p>
+</body>
+```
+```CSS
+#titular { color: green; }
+#destacado {text-decoration: underline;}
+```
+
+## Unidades de medida
+### Relativas
+- PX: Medida relatriva puesto que se ira adaptando9 a la pantalla y su resolucion
+- EM: Toma el tamaño de los que le viene por herencia y en base a eso coge la anchura que sera la medida que tome como referencia
+- REM: No funciona por herencia se base en la fuente definida en el root de html, en base a eso coge la anchura y se escala siempre respecto a una base
+- EX: Toma el tamaño de los que viene por herencia y en base a eso coge la altura y escalamos
+- REX: No funciona por herencia, se basa en la fuente definida en el root de html en base a eso coge la altura y se escala
+
+### Absolutas
+Medidas que pueden ser específicas de zonas concretas del mundo i será el navegador el que haga los cálculos para ocupar en pixeles el tamaño especificado.
+- in (inche o pulgadas): 1in = 2.54cm
+- cm: centímetros
+- mm: milímetros
+- pt (puntos):1pt = 0.35mm, suele usarse para impresión.
+- pc (picas): 1pc = 12pt = 4.23mm
+
+### Porcentuales
+Medidas relativas, que nos va bien para hacer nuestra web responsive i poner un porcentaje % querrá decir que ocupara ese porcentaje.
+
+### Tamaño: width y heigth
+- width = 100px → Fijamos el tamaño a un determinado número de píxeles.
+- width = 50% → indicamos que porcentaje es el que debe ocupar el elemento
+- min_width = 250px → Fijamos un tamaño mínimo.
+- max_width = 400px → Fijamos un tamaño máximo.
+
+## Modelos de caja
+### Propiedades basicas: modelo de caja
+- Los elementos se encuentran en “cajas” con propiedades que son como las capas de una cebolla y que dan mucho juego a nivel estético con espacios y bordes.
+	- width: establece la anchura del elemento. Pueden ser valores absolutos o relativos al contenedor del elemento.
+	- height: similar a witdth para la altura del elemento.
+ 	- padding: espacio entre el borde del elemento y su contenido. Es un borde interno (–left, -right, -top o –bottom).
+	- border: es el borde que rodea a nuestro elemento y podemos elegir entre (–left, -right, -top o –bottom).
+	- margin: espacio exterior al borde del elemento que mantiene con los elementos vecinos (–left, -right, -top o –bottom).
+	 
+  	- background-color: color de fondo
+	- background-image: imagen de fondo
+	- vertical-align: alineamiento vertical
+	- text-align: alineamiento del texto 	
+
+### Margin y Padding
+- Margin: Hacemos referencia al borde externo
+- Padding: Hace referencia al borde interno
+
+## Display
+El display permite especificar el tipo de caja que se aplica a un elemento. Los diferentes tipos de cajas corresponden a diferentes tipos de contenido
+- none: hace que no se genere caja, el elemento desaparece, deja de ser visible  y no ocupa ningún espacio.
+- block: caja rectangular, con dimensiones específicas, que forma un bloque y hace un salto de línea 
+- inline: caja en línea que puede ocupar varias líneas, pero no le podemos asignar unas dimensiones fijas. 
+- inline-block: caja en línea, pero que se formatea como una caja de tipo block y le podemos asignar unas dimensiones.
+
+
+
+
