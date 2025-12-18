@@ -369,6 +369,24 @@ El display permite especificar el tipo de caja que se aplica a un elemento. Los 
 - inline: caja en línea que puede ocupar varias líneas, pero no le podemos asignar unas dimensiones fijas. 
 - inline-block: caja en línea, pero que se formatea como una caja de tipo block y le podemos asignar unas dimensiones.
 
+## Visibilidad de capas
+- Visibility es la propiedad que permite no hacer visible un elemento per ocupa su espacio
+- Opacity es la propiedad que informandose con valores entre 0 y 1 podremos hacer que sea totalmente solido o bien translucido incluso transparente
 
+## Overflow
+- Sirve en el modelado de cajas para indicar al navegador que es lo que debe hacer con el contenido que no cabre dentro de una capa, segun las dimensiones que se le han asignado
+	- visible → Muestra todo aunque no quepa.
+	- hidden →  No mostrará lo que sobresale, recorta todo lo que no quepa en la ventana.
+	- scroll → Aparece un scroll para poder ver todo el contenido, pero solo dentro del espacio de la ventana que recortará 	el contenido.
+	- auto → Solo si es necesario aparecerá un scroll.
 
+## Position
+- Es la propiedad que indica en que lugar de la pantalla posicionaremos nuestro elemento
+	- static: No hace caso de las coordenadas, los objetos se van posicionando uno trás otro según su display.
+	- absolute: Se colocara donde indican las coordenadas (top y left)
+	- relative: Indicará que será respecto al padre, respecto al elemento que lo contenga.  
+	- fixed: Siempre posiciona sus coordenadas respecto al body y además se quedará siempre fijado, siempre visible, 			anclado en la página (ej: Menú)
+	- sticky: Es un relative y un fixed a la vez, es relativo mientras se visualiza al padre y si scrolamos pasará a ser 		fixed y será siempre visible.
 
+ ## Display Flex
+ 
