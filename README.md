@@ -388,5 +388,4 @@ El display permite especificar el tipo de caja que se aplica a un elemento. Los 
 	- fixed: Siempre posiciona sus coordenadas respecto al body y además se quedará siempre fijado, siempre visible, 			anclado en la página (ej: Menú)
 	- sticky: Es un relative y un fixed a la vez, es relativo mientras se visualiza al padre y si scrolamos pasará a ser 		fixed y será siempre visible.
 
- ## Display Flex
  
